@@ -5,17 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form ovelse</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
     <h1>Form Øvelse</h1>
-    <form name="contact" netlify>
-        <label for="name"> Dit navn <input type="text" id="navn" name="navn" </label>
-            <label for="email"> Din email <input type="email" name="email" id="email"></label>
-            <label for="message"> Message </label> <textarea name="besked" id="besked"></textarea>
+    <div class="container">
+        <form name="contact" netlify>
+            <label for="navn">Dit navn</label>
+            <input type="text" id="navn" name="navn">
 
+            <label for="email">Din email</label>
+            <input type="email" name="email" id="email">
 
-    </form>
+            <label for="message">Message</label>
+            <textarea name="besked" id="besked"></textarea>
+
+            <input type="submit" value="Login">
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Husk mig
+            </label>
+        </form>
+    </div>
 </body>
 
 </html>
